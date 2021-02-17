@@ -1,0 +1,192 @@
+//a gate that activates whenever a zero is acheived can be made by conencting a 1k resistor to pin 6
+
+long randNumber;
+int potpin1 = 1;  // analog pin used to connect the potentiometer
+int val;    // variable to read the value from the analog pin
+void setup() {
+  pinMode(2, OUTPUT);
+  pinMode(3, OUTPUT);
+  pinMode(4, OUTPUT);
+  pinMode(5, OUTPUT);
+  pinMode(6, OUTPUT);
+  pinMode(7, OUTPUT);
+  randomSeed(analogRead(0));
+}
+
+void loop() {
+  val = analogRead(potpin1);            // reads the value of the potentiometer (value between 0 and 1023)
+  val = map(val, 0, 1023, 700, 3);
+  delay(val);
+
+  randNumber = random(1, 23);
+
+  if (randNumber == 1) {
+    digitalWrite(2, HIGH);
+    digitalWrite(3, HIGH);
+    digitalWrite(4, HIGH);
+    digitalWrite(5, HIGH);
+    digitalWrite(6, HIGH);
+    digitalWrite(7, HIGH);
+    delay(val);
+  }
+  else if (randNumber == 2) {
+    digitalWrite(4, HIGH);
+    digitalWrite(5, HIGH);
+    delay(val);
+  }
+  else if (randNumber == 3) {
+    digitalWrite(2, HIGH);
+    digitalWrite(3, HIGH);
+    digitalWrite(4, HIGH);
+    digitalWrite(5, HIGH);
+    digitalWrite(6, HIGH);
+    digitalWrite(7, HIGH);
+    delay(val);
+  }
+  else if (randNumber == 1) {
+    digitalWrite(4, HIGH);
+    digitalWrite(5, HIGH);
+    delay(val);
+  }
+  else if (randNumber == 5) {
+    digitalWrite(4, HIGH);
+    digitalWrite(5, HIGH);
+    delay(val);
+  }
+  else if (randNumber == 6) {
+    digitalWrite(2, HIGH);
+    digitalWrite(3, HIGH);
+    digitalWrite(4, HIGH);
+    digitalWrite(5, HIGH);
+    digitalWrite(6, HIGH);
+    digitalWrite(7, HIGH);
+    delay(val);
+  }
+  else if (randNumber == 7) {
+    digitalWrite(4, HIGH);
+    digitalWrite(5, HIGH);
+    delay(val);
+  }
+  else if (randNumber == 8) {
+    digitalWrite(2, HIGH);
+    digitalWrite(3, HIGH);
+    digitalWrite(4, HIGH);
+    digitalWrite(5, HIGH);
+    digitalWrite(6, HIGH);
+    digitalWrite(7, HIGH);
+    delay(val);
+  }
+  else if (randNumber == 9) {
+    digitalWrite(4, HIGH);
+    digitalWrite(5, HIGH);
+    delay(val);
+  }
+  else if (randNumber == 10) {
+    digitalWrite(2, HIGH);
+    digitalWrite(3, HIGH);
+    digitalWrite(4, HIGH);
+    digitalWrite(5, HIGH);
+    digitalWrite(6, HIGH);
+    digitalWrite(7, HIGH);
+    delay(val);
+  }
+  else if (randNumber == 11) {
+    digitalWrite(4, HIGH);
+    digitalWrite(5, HIGH);
+    delay(val);
+  }
+  else if (randNumber == 12) {
+    digitalWrite(2, HIGH);
+    digitalWrite(3, HIGH);
+    digitalWrite(4, HIGH);
+    digitalWrite(5, HIGH);
+    digitalWrite(6, HIGH);
+    digitalWrite(7, HIGH);
+    delay(val);
+  }
+  else if (randNumber == 13) {
+    digitalWrite(4, HIGH);
+    digitalWrite(5, HIGH);
+    delay(val);
+  }
+  else if  (randNumber == 14) {
+    digitalWrite(2, HIGH);
+    digitalWrite(3, HIGH);
+    digitalWrite(4, HIGH);
+    digitalWrite(5, HIGH);
+    digitalWrite(6, HIGH);
+    digitalWrite(7, HIGH);
+    delay(val);
+  }
+  else if (randNumber == 15) {
+    digitalWrite(2, HIGH);
+    digitalWrite(3, HIGH);
+    digitalWrite(4, HIGH);
+    digitalWrite(5, HIGH);
+    digitalWrite(6, HIGH);
+    digitalWrite(7, HIGH);
+    delay(val);
+  }
+  else if (randNumber == 16) {
+    digitalWrite(4, HIGH);
+    digitalWrite(5, HIGH);
+    delay(val);
+  }
+  else if (randNumber == 17) {
+    digitalWrite(4, HIGH);
+    digitalWrite(5, HIGH);
+    delay(val);
+  }
+  else if (randNumber == 18) {
+    digitalWrite(4, HIGH);
+    digitalWrite(5, HIGH);
+    delay(val);
+  }
+  if (randNumber == 19) {
+    digitalWrite(2, HIGH);
+    digitalWrite(3, HIGH);
+    digitalWrite(4, HIGH);
+    digitalWrite(5, HIGH);
+    digitalWrite(6, HIGH);
+    digitalWrite(7, HIGH);
+    delay(val);
+  }
+  else if (randNumber == 20) {
+    digitalWrite(4, HIGH);
+    digitalWrite(5, HIGH);
+    delay(val);
+  }
+
+  else if (randNumber == 21) {
+    digitalWrite(2, HIGH);
+    digitalWrite(3, HIGH);
+    digitalWrite(4, HIGH);
+    digitalWrite(5, HIGH);
+    digitalWrite(6, HIGH);
+    digitalWrite(7, HIGH);
+    delay(val);
+  }
+  else if  (randNumber == 22) {
+    digitalWrite(2, HIGH);
+    digitalWrite(3, HIGH);
+    digitalWrite(4, HIGH);
+    digitalWrite(5, HIGH);
+    digitalWrite(6, HIGH);
+    digitalWrite(7, HIGH);
+    delay(val);
+  }
+  else if (randNumber == 23) {
+    digitalWrite(4, HIGH);
+    digitalWrite(5, HIGH);
+    delay(val);
+  }
+  digitalWrite(2, LOW);
+  digitalWrite(3, LOW);
+  digitalWrite(4, LOW);
+  digitalWrite(5, LOW);
+  digitalWrite(6, LOW);
+  digitalWrite(7, LOW);
+  digitalWrite(8, LOW);
+  digitalWrite(9, LOW);
+  delay(1);
+}
