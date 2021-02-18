@@ -1,4 +1,4 @@
-//a gate that activates whenever a zero is acheived can be made by conencting a 1k resistor to pin 6
+//a gate that activates whenever a zero is acheived can be made by conencting a 330 ohm resistor to pin 6
 
 long randNumber;
 int potpin1 = 1;  // analog pin used to connect the potentiometer
